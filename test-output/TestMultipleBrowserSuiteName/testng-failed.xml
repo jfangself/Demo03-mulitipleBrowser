@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [TestMultipleBrowserSuiteName]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="demo.selenium.MultipleBrowserSearchTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="testLoginKiwi"/>
+        </methods>
+      </class> <!-- demo.selenium.MultipleBrowserSearchTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [TestMultipleBrowserSuiteName] -->
